@@ -17,22 +17,20 @@ class Acceuil extends StatelessWidget {
         ),
       ),
       body: Center(
-        // Centrer tout le contenu du body
         child: Column(
           mainAxisAlignment: MainAxisAlignment.center,
           children: [
-            // Image asset
             Image.asset(
-              'assets/img/Quiz.png',
-              height: 200, // Ajustez la hauteur selon vos besoins
+              'assets/img/Question.png',
+              height: 500,
+              width: 800,
             ),
-            const SizedBox(height: 50), // Espacement entre l'image et le bouton
+            const SizedBox(height: 50),
             // ElevatedButton
             ElevatedButton(
               onPressed: () {
                 print('Enter pressed!');
-                Navigator.pushNamed(
-                    context, '/home'); // Navigation vers la page d'accueil
+                Navigator.pushNamed(context, '/home');
               },
               child: const Text(
                 "Enter App",
